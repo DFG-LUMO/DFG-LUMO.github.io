@@ -1,0 +1,70 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container hero-inner">
+    <img src="{{ "images/logo/lumo_icon.svg" | relURL }}" alt="LUMO Logo" class="hero-logo">
+    <h1>LUMO</h1>
+    <p class="hero-subtitle">{{ .Site.Params.description }}</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="{{ "/about/" | relURL }}">Explore the project</a>
+      <a class="button button-secondary" href="{{ "/team/" | relURL }}">Meet the team</a>
+    </div>
+  </div>
+</section>
+
+<section class="home-facts">
+  <div class="container">
+    <div class="facts-grid">
+      <article class="fact-card">
+        <p class="fact-label">Duration</p>
+        <p class="fact-value">{{ .Site.Params.projectDuration }}</p>
+        <p class="fact-meta">{{ .Site.Params.projectStart }} – {{ .Site.Params.projectEnd }}</p>
+      </article>
+      <article class="fact-card">
+        <p class="fact-label">Host Institution</p>
+        <p class="fact-value">{{ .Site.Params.institution }}</p>
+        <p class="fact-meta">Department of Informatics</p>
+      </article>
+      <article class="fact-card">
+        <p class="fact-label">Funding</p>
+        <p class="fact-value">DFG Research Grant</p>
+        <p class="fact-meta"><a href="{{ .Site.Params.geprisURL }}" rel="noopener noreferrer" target="_blank">Project {{ .Site.Params.projectNumber }}</a></p>
+      </article>
+      <article class="fact-card">
+        <p class="fact-label">Focus</p>
+        <p class="fact-value">Robust multimodal lifelong learning</p>
+        <p class="fact-meta">Vision-language and robot learning</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="home-about">
+  <div class="container">
+    {{ .Content }}
+  </div>
+</section>
+
+<section class="home-objectives">
+  <div class="container">
+    <h2>Research Objectives</h2>
+    <div class="objectives-grid">
+      <div class="objective-card">
+        <h3>O1 – Datasets &amp; Environments</h3>
+        <p>Build diagnostic datasets and simulation environments for compositional vision-language learning and language-conditioned robotic manipulation.</p>
+      </div>
+      <div class="objective-card">
+        <h3>O2 – Concept-Based Explanations</h3>
+        <p>Explain how concepts and relations emerge during continual learning using concept-based XAI and training-dynamics analysis.</p>
+      </div>
+      <div class="objective-card">
+        <h3>O3 – Neuro-Symbolic Integration</h3>
+        <p>Inject symbolic constraints into embedding spaces to improve retention, compositionality, and robust transfer across tasks.</p>
+      </div>
+      <div class="objective-card">
+        <h3>O4 – Sim2Real Transfer</h3>
+        <p>Transfer insights from simulation to the NICO and NICOL robots and compare concept representations across simulated and real settings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

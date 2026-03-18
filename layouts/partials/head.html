@@ -1,0 +1,78 @@
+{{- $title := cond .IsHome .Site.Title (printf "%s – %s" .Title .Site.Title) -}}
+{{- $description := .Description | default .Site.Params.description -}}
+{{- $image := .Site.Params.socialImage | absURL -}}
+{{- $pageURL := .Permalink -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#111827">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="{{ $pageURL }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ $pageURL }}">
+<meta property="og:image" content="{{ $image }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $image }}">
+<link rel="icon" href="{{ "images/logo/lumo_icon_square.svg" | relURL }}" type="image/svg+xml">
+<link rel="preload" href="{{ "fonts/ibm-plex-sans/ibm-plex-sans-400.ttf" | relURL }}" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="{{ "fonts/ibm-plex-sans/ibm-plex-sans-700.ttf" | relURL }}" as="font" type="font/ttf" crossorigin>
+<script>
+  (function(){
+    var preference = 'system';
+    var supportsMatchMedia = typeof window.matchMedia === 'function';
+    var prefersDark = supportsMatchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    try {
+      var storedPreference = localStorage.getItem('theme-preference');
+      if (storedPreference === 'dark' || storedPreference === 'light' || storedPreference === 'system') {
+        preference = storedPreference;
+      } else {
+        var legacyTheme = localStorage.getItem('theme');
+        if (legacyTheme === 'dark' || legacyTheme === 'light') {
+          preference = legacyTheme;
+        }
+      }
+    } catch (e) {
+    }
+    var appliedTheme = (preference === 'dark' || preference === 'light')
+      ? preference
+      : (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', appliedTheme);
+    document.documentElement.setAttribute('data-theme-preference', preference);
+  })();
+</script>
+{{ $website := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" .Site.Title
+  "description" $description
+  "url" .Site.BaseURL
+  "publisher" (dict
+    "@type" "Organization"
+    "name" .Site.Title
+    "url" .Site.BaseURL
+  )
+}}
+{{ $webpage := dict
+  "@context" "https://schema.org"
+  "@type" "WebPage"
+  "name" $title
+  "description" $description
+  "url" $pageURL
+  "isPartOf" (dict
+    "@type" "WebSite"
+    "name" .Site.Title
+    "url" .Site.BaseURL
+  )
+  "primaryImageOfPage" $image
+}}
+<script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
+<script type="application/ld+json">{{ $webpage | jsonify | safeJS }}</script>
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">

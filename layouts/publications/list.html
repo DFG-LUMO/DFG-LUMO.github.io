@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{ $sections := site.Data.publications.sections }}
+<article class="page-content">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    {{ if $sections }}
+      {{ range $section := $sections }}
+        <section class="publication-section">
+          <h2>{{ $section.title }}</h2>
+          {{ with $section.description }}
+            <p>{{ . }}</p>
+          {{ end }}
+
+          {{ with $section.entries }}
+            <ul class="publication-list">
+              {{ range . }}
+                <li>
+                  <a class="pub-title" href="{{ .url }}">{{ .title }}</a>
+                  <div class="pub-authors">{{ .authors }}</div>
+                  <div class="pub-venue">{{ .venue }}, {{ .year }}</div>
+                </li>
+              {{ end }}
+            </ul>
+          {{ else }}
+            <div class="publication-empty">
+              <p>No publications have been listed for this section yet.</p>
+            </div>
+          {{ end }}
+        </section>
+      {{ end }}
+    {{ else }}
+      <div class="publication-empty">
+        <p>No publications have been added yet.</p>
+      </div>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

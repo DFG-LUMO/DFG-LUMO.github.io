@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
+  <rect width="300" height="80" fill="none"/>
+  <text x="10" y="35" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#BE1522">Universität</text>
+  <text x="10" y="58" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#BE1522">Hamburg</text>
+</svg>

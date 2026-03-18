@@ -1,0 +1,35 @@
+<div class="team-card">
+  {{ $name := .name }}
+  {{ $title := .title }}
+  {{ if .homepage }}
+  <a href="{{ .homepage }}" rel="noopener noreferrer" target="_blank" class="team-photo-link" aria-label="Visit {{ .name }} homepage">
+  {{ end }}
+  <div class="team-photo-wrapper">
+    {{ if .photo }}
+    {{ if hasPrefix .photo "http" }}
+    <img src="{{ .photo }}" alt="Photo of {{ .name }}" class="team-photo" width="110" height="110" loading="lazy" decoding="async">
+    {{ else }}
+    <img src="{{ .photo | relURL }}" alt="Photo of {{ .name }}" class="team-photo" width="110" height="110" loading="lazy" decoding="async">
+    {{ end }}
+    {{ else }}
+    <div class="team-photo-placeholder">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="38" r="18" fill="#b0bec5"/>
+        <ellipse cx="50" cy="80" rx="30" ry="22" fill="#b0bec5"/>
+      </svg>
+    </div>
+    {{ end }}
+  </div>
+  {{ if .homepage }}
+  </a>
+  {{ end }}
+  <h3 class="team-name">
+    {{ if .homepage }}
+    <a href="{{ .homepage }}" rel="noopener noreferrer" target="_blank">{{ with $title }}<span class="team-title-prefix">{{ . }}</span> {{ end }}{{ $name }}</a>
+    {{ else }}
+    {{ with $title }}<span class="team-title-prefix">{{ . }}</span> {{ end }}{{ $name }}
+    {{ end }}
+  </h3>
+  <p class="team-role">{{ .role }}</p>
+  {{ with .affiliation }}<p class="team-affiliation">{{ . }}</p>{{ end }}
+</div>

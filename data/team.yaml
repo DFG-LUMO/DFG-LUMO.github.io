@@ -1,0 +1,40 @@
+pis:
+  - name: "Dr. Jae Hee Lee"
+    role: "Principal Investigator"
+    affiliation: "University of Hamburg"
+    homepage: "https://jaeheelee.gitlab.io/"
+    email: "jae@jaeheelee.de"
+    photo: "/images/team/jae-hee-lee.webp"
+
+  - name: "Prof. Dr. Stefan Wermter"
+    role: "Principal Investigator"
+    affiliation: "University of Hamburg"
+    homepage: "https://www.inf.uni-hamburg.de/en/inst/ab/wtm/people/wermter.html"
+    email: "stefan.wermter@uni-hamburg.de"
+    photo: "/images/team/stefan-wermter.jpg"
+
+research_associates:
+  - name: "Dr. Philipp Allgeuer"
+    role: "Postdoctoral Research Associate"
+    affiliation: "University of Hamburg"
+    homepage: "https://www.inf.uni-hamburg.de/en/inst/ab/wtm/people/allgeuer.html"
+    email: "philipp.allgeuer@uni-hamburg.de"
+    photo: "/images/team/philipp-allgeuer.jpg"
+
+  - name: "Jan Gerrit Habekost"
+    role: "Research Associate"
+    affiliation: "University of Hamburg"
+    homepage: "https://www.inf.uni-hamburg.de/en/inst/ab/wtm/people/habekost.html"
+    photo: "/images/team/jan-gerrit-habekost.jpg"
+
+student_assistants:
+  - name: "Thomas Vitry"
+    role: "Student Assistant"
+    homepage: "https://perso.eleves.ens-rennes.fr/people/thomas.vitry/index_en.html"
+    affiliation: "University of Hamburg"
+
+  - name: "Adam Astamir"
+    role: "Student Assistant"
+    affiliation: "University of Hamburg"
+    homepage: "https://adamastamir.vercel.app/"
+    photo: "/images/team/adam-astamir.jpg"

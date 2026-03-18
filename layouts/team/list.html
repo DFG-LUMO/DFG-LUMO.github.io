@@ -1,0 +1,29 @@
+{{ define "main" }}
+<article class="page-content">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    {{ $team := .Site.Data.team }}
+    <div class="team-grid">
+      {{ with $team.pis }}
+        {{ range . }}
+          {{ partial "team-card.html" . }}
+        {{ end }}
+      {{ end }}
+
+      {{ with $team.research_associates }}
+        {{ range . }}
+          {{ partial "team-card.html" . }}
+        {{ end }}
+      {{ end }}
+
+      {{ with $team.student_assistants }}
+        {{ range . }}
+        {{ partial "team-card.html" . }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}
