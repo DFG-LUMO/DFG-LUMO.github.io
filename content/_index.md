@@ -9,6 +9,4 @@ LUMO studies how multimodal AI systems can remain reliable when tasks change. Th
 
 We combine controlled benchmarks, concept-based explainability, neuro-symbolic learning, and sim2real experiments to understand how compositional knowledge is formed, preserved, and reused.
 
-The project name stands for **Lifelong Multimodal Language Learning by Explaining and Exploiting Compositional Knowledge**.
-
 [Read the full project outline →](about/)
