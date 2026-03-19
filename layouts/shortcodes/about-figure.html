@@ -1,0 +1,49 @@
+{{- $base := .Get "name" -}}
+{{- $alt := .Get "alt" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+{{- $maxWidth := .Get "maxWidth" -}}
+{{- $maxWidthPx := 0 -}}
+{{- if $maxWidth -}}
+  {{- $maxWidthPx = int (replaceRE "[^0-9]" "" $maxWidth) -}}
+{{- end -}}
+{{- $sizes := .Get "sizes" -}}
+{{- if not $sizes -}}
+  {{- if gt $maxWidthPx 0 -}}
+    {{- $sizes = printf "(max-width: %dpx) calc(100vw - 3rem), %dpx" (add $maxWidthPx 48) $maxWidthPx -}}
+  {{- else -}}
+    {{- $sizes = "(max-width: 980px) calc(100vw - 3rem), 892px" -}}
+  {{- end -}}
+{{- end -}}
+{{- $variants := slice 480 960 1920 -}}
+{{- $webpSrcset := slice -}}
+{{- $pngSrcset := slice -}}
+
+{{- range $variants -}}
+  {{- $webpSrcset = $webpSrcset | append (printf "/images/figures/about/%s-%d.webp %dw" $base . .) -}}
+  {{- $pngSrcset = $pngSrcset | append (printf "/images/figures/about/%s-%d.png %dw" $base . .) -}}
+{{- end -}}
+
+<figure class="about-figure"{{ with $maxWidth }} style="--about-figure-max-width: {{ . }};"{{ end }}>
+  <picture>
+    <source
+      type="image/webp"
+      srcset="{{ delimit $webpSrcset ", " }}"
+      sizes="{{ $sizes }}"
+    >
+    <img
+      src="/images/figures/about/{{ $base }}-1920.png"
+      srcset="{{ delimit $pngSrcset ", " }}"
+      sizes="{{ $sizes }}"
+      alt="{{ $alt }}"
+      {{ with $width }}width="{{ . }}"{{ end }}
+      {{ with $height }}height="{{ . }}"{{ end }}
+      loading="{{ $loading }}"
+      decoding="async"
+    >
+  </picture>
+  {{- with .Inner -}}
+    <figcaption>{{ . | markdownify }}</figcaption>
+  {{- end -}}
+</figure>

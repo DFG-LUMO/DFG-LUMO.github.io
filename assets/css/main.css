@@ -886,9 +886,17 @@ ul, ol {
   text-align: center;
 }
 
+.about-figure picture {
+  display: block;
+  width: 100%;
+  max-width: var(--about-figure-max-width, 100%);
+  margin: 0 auto;
+}
+
 .about-figure img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  max-width: none;
   height: auto;
   margin: 0 auto;
   border-radius: var(--radius);
