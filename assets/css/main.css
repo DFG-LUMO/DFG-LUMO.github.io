@@ -815,6 +815,10 @@ ul, ol {
   min-height: 44px;
 }
 
+.footer-logo-switch picture {
+  display: block;
+}
+
 .footer-logo-light-theme {
   display: block;
 }

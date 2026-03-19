@@ -11,7 +11,7 @@ pis:
     affiliation: "University of Hamburg"
     homepage: "https://www.inf.uni-hamburg.de/en/inst/ab/wtm/people/wermter.html"
     email: "stefan.wermter@uni-hamburg.de"
-    photo: "/images/team/stefan-wermter.jpg"
+    photo: "/images/team/stefan-wermter.webp"
 
 research_associates:
   - name: "Dr. Philipp Allgeuer"
@@ -19,22 +19,23 @@ research_associates:
     affiliation: "University of Hamburg"
     homepage: "https://www.inf.uni-hamburg.de/en/inst/ab/wtm/people/allgeuer.html"
     email: "philipp.allgeuer@uni-hamburg.de"
-    photo: "/images/team/philipp-allgeuer.jpg"
+    photo: "/images/team/philipp-allgeuer.webp"
 
   - name: "Jan Gerrit Habekost"
     role: "Research Associate"
     affiliation: "University of Hamburg"
     homepage: "https://www.inf.uni-hamburg.de/en/inst/ab/wtm/people/habekost.html"
-    photo: "/images/team/jan-gerrit-habekost.jpg"
+    photo: "/images/team/jan-gerrit-habekost.webp"
 
 student_assistants:
   - name: "Thomas Vitry"
     role: "Student Assistant"
     homepage: "https://perso.eleves.ens-rennes.fr/people/thomas.vitry/index_en.html"
     affiliation: "University of Hamburg"
+    photo: "/images/team/thomas-vitry.webp"
 
   - name: "Adam Astamir"
     role: "Student Assistant"
     affiliation: "University of Hamburg"
     homepage: "https://adamastamir.vercel.app/"
-    photo: "/images/team/adam-astamir.jpg"
+    photo: "/images/team/adam-astamir.webp"
