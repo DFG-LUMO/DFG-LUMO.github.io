@@ -35,7 +35,7 @@ Develop datasets and environments for two representative multimodal language lea
   alt="Vision and language integration"
   width="1920"
   height="1142"
-  maxWidth="520px"
+  maxWidth="440px"
 >}}
 Vision and language integration: compositional understanding across modalities.
 {{< /about-figure >}}
@@ -49,7 +49,7 @@ Understand **why** certain approaches lead to more robust LLMMs by scrutinizing 
   alt="Concept-based XAI methods"
   width="1920"
   height="1555"
-  maxWidth="520px"
+  maxWidth="360px"
 >}}
 Concept-based explainability methods for analyzing internal representations.
 {{< /about-figure >}}
@@ -68,7 +68,7 @@ Develop a **tightly integrated neuro-symbolic approach** to improve the model's 
   alt="Concept subspaces"
   width="1920"
   height="1546"
-  maxWidth="520px"
+  maxWidth="360px"
 >}}
 Concept subspaces in the embedding space for neuro-symbolic integration.
 {{< /about-figure >}}
