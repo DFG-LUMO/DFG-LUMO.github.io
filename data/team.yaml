@@ -5,6 +5,8 @@ pis:
     homepage: "https://jaeheelee.gitlab.io/"
     email: "jae@jaeheelee.de"
     photo: "/images/team/jae-hee-lee.webp"
+    photo_scale: 1.5
+    photo_origin: "45% 30%"
 
   - name: "Prof. Dr. Stefan Wermter"
     role: "Principal Investigator"
@@ -20,6 +22,8 @@ research_associates:
     homepage: "https://www.inf.uni-hamburg.de/en/inst/ab/wtm/people/allgeuer.html"
     email: "philipp.allgeuer@uni-hamburg.de"
     photo: "/images/team/philipp-allgeuer.webp"
+    photo_scale: 1.4
+    photo_origin: "45% 18%"
 
   - name: "Jan Gerrit Habekost"
     role: "Research Associate"
@@ -33,9 +37,14 @@ student_assistants:
     homepage: "https://perso.eleves.ens-rennes.fr/people/thomas.vitry/index_en.html"
     affiliation: "University of Hamburg"
     photo: "/images/team/thomas-vitry.webp"
+    photo_scale: 1.3
+    photo_origin: "45% 30%"
+
 
   - name: "Adam Astamir"
     role: "Student Assistant"
     affiliation: "University of Hamburg"
     homepage: "https://adamastamir.vercel.app/"
     photo: "/images/team/adam-astamir.webp"
+    photo_scale: 1.3
+    photo_origin: "55% 18%"

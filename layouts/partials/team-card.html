@@ -1,15 +1,18 @@
 <div class="team-card">
   {{ $name := .name }}
   {{ $title := .title }}
+  {{ $photoStyle := "" }}
+  {{ with .photo_scale }}{{ $photoStyle = printf "%s--team-photo-scale: %v;" $photoStyle . }}{{ end }}
+  {{ with .photo_origin }}{{ $photoStyle = printf "%s--team-photo-origin: %s;" $photoStyle . }}{{ end }}
   {{ if .homepage }}
   <a href="{{ .homepage }}" rel="noopener noreferrer" target="_blank" class="team-photo-link" aria-label="Visit {{ .name }} homepage">
   {{ end }}
   <div class="team-photo-wrapper">
     {{ if .photo }}
     {{ if hasPrefix .photo "http" }}
-    <img src="{{ .photo }}" alt="Photo of {{ .name }}" class="team-photo" width="110" height="110" loading="lazy" decoding="async">
+    <img src="{{ .photo }}" alt="Photo of {{ .name }}" class="team-photo" width="110" height="110" loading="lazy" decoding="async"{{ with $photoStyle }} style="{{ . | safeCSS }}"{{ end }}>
     {{ else }}
-    <img src="{{ .photo | relURL }}" alt="Photo of {{ .name }}" class="team-photo" width="110" height="110" loading="lazy" decoding="async">
+    <img src="{{ .photo | relURL }}" alt="Photo of {{ .name }}" class="team-photo" width="110" height="110" loading="lazy" decoding="async"{{ with $photoStyle }} style="{{ . | safeCSS }}"{{ end }}>
     {{ end }}
     {{ else }}
     <div class="team-photo-placeholder">
