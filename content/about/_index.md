@@ -37,7 +37,7 @@ Develop datasets and environments for two representative multimodal language lea
   height="1142"
   maxWidth="440px"
 >}}
-Vision and language integration: compositional understanding across modalities.
+Vision and language integration: compositional understanding across modalities. Source image: [What’s Up dataset](https://github.com/amitakamath/whatsup_vlms), Kamath et al. (2023).
 {{< /about-figure >}}
 
 ### Concept-Based Explanations of Lifelong Multimodal Language Learning
