@@ -3,6 +3,7 @@
   {{ $title := .title }}
   {{ $photoStyle := "" }}
   {{ with .photo_scale }}{{ $photoStyle = printf "%s--team-photo-scale: %v;" $photoStyle . }}{{ end }}
+  {{ with .photo_position }}{{ $photoStyle = printf "%s--team-photo-position: %s;" $photoStyle . }}{{ end }}
   {{ with .photo_origin }}{{ $photoStyle = printf "%s--team-photo-origin: %s;" $photoStyle . }}{{ end }}
   {{ if .homepage }}
   <a href="{{ .homepage }}" rel="noopener noreferrer" target="_blank" class="team-photo-link" aria-label="Visit {{ .name }} homepage">
