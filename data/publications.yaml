@@ -2,9 +2,9 @@ sections:
   - title: "Project-Specific Publications"
     entries:
       - title: "Knowing the Facts but Choosing the Shortcut: Understanding How Large Language Models Compare Entities"
-        url: "https://arxiv.org/pdf/2510.16815"
+        url: "https://aclanthology.org/2026.eacl-long.222.pdf"
         authors: "H. H. Lehmann, J. H. Lee, S. Schockaert, and S. Wermter"
-        venue: "Conference of the European Chapter of the Association for Computational Linguistics (EACL, to appear)"
+        venue: "Conference of the European Chapter of the Association for Computational Linguistics (EACL)"
         year: 2026
       - title: "Towards Ethical Multi-Agent Systems of Large Language Models: A Mechanistic Interpretability Perspective"
         url: "https://arxiv.org/pdf/2512.04691"
