@@ -7,7 +7,7 @@ description: "About the LUMO project"
 
 The goal of the project **LUMO** (**L**ifelong M**u**lti**mo**dal Language Learning by Explaining and Exploiting Compositional Knowledge) is to explore the important and challenging research question of **how to make multimodal language models robust against task changes by explaining and exploiting compositional knowledge**.
 
-Existing multimodal models have problems in a lifelong language learning setting, where they are confronted with changing tasks while having to retain previously learned knowledge — i.e., mitigating *catastrophic forgetting*. This has been considered a challenging obstacle to their application to real-world scenarios.
+Existing multimodal models have problems in a lifelong language learning setting, where they are confronted with changing tasks while having to retain previously learned knowledge (i.e., mitigating *catastrophic forgetting*). This has been considered a challenging obstacle to their application to real-world scenarios.
 
 In devising **Lifelong Learning Multimodal Models (LLMMs)**, we pursue four main objectives realized through corresponding work packages.
 
