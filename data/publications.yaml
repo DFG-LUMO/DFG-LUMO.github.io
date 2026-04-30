@@ -4,7 +4,7 @@ sections:
       - title: "The Expert Strikes Back: Interpreting Mixture-of-Experts Language Models at Expert Level"
         url: "https://arxiv.org/pdf/2604.02178"
         authors: "J. Herbst, J. H. Lee, and S. Wermter"
-        venue: "accepted to International Conference on Machine Learning (ICML)"
+        venue: "to appear in International Conference on Machine Learning (ICML)"
         year: 2026
       - title: "Knowing the Facts but Choosing the Shortcut: Understanding How Large Language Models Compare Entities"
         url: "https://aclanthology.org/2026.eacl-long.222.pdf"
