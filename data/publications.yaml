@@ -3,7 +3,7 @@ sections:
     entries:
       - title: "The Expert Strikes Back: Interpreting Mixture-of-Experts Language Models at Expert Level"
         url: "https://arxiv.org/pdf/2604.02178"
-        authors: "J. Herbst, J. H. Lee, and S. Wermter"
+        authors: "J. Herbst, S. Wermter, and J. H. Lee"
         venue: "International Conference on Machine Learning (ICML), to appear"
         year: 2026
       - title: "Explaining, Verifying, and Aligning Semantic Hierarchies in Vision-Language Model Embeddings"
