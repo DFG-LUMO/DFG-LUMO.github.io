@@ -2,14 +2,19 @@ sections:
   - title: "Project-Specific Publications and Preprints"
     entries:
       - title: "The Expert Strikes Back: Interpreting Mixture-of-Experts Language Models at Expert Level"
-        url: "https://arxiv.org/pdf/2604.02178"
+        url: "https://openreview.net/forum?id=ZCdnWNavOF"
         authors: "J. Herbst, S. Wermter, and J. H. Lee"
-        venue: "International Conference on Machine Learning (ICML), to appear"
+        venue: "International Conference on Machine Learning (ICML)"
         year: 2026
       - title: "Explaining, Verifying, and Aligning Semantic Hierarchies in Vision-Language Model Embeddings"
         url: "https://arxiv.org/abs/2603.26798"
         authors: "G. Schwalbe, M. Keser, M. Bayerkuhnlein, E. Heinert, A. Mütze, M. Keller, S. Tiwari, G. Mikriukov, D. Wolter, J. H. Lee, and M. Rottmann"
         venue: "International Joint Conference on Artificial Intelligence (IJCAI), to appear"
+        year: 2026
+      - title: "Bias Leaves a Gradient Trail: Label-Free Bias Identification via Gradient Probes on Concept Decompositions"
+        url: "https://arxiv.org/pdf/2605.28780"
+        authors: "T. Vitry, K. Edgeworth, S. Wermter, and J. H. Lee"
+        venue: "German Conference on Artificial Intelligence (KI), to appear"
         year: 2026
       - title: "Knowing the Facts but Choosing the Shortcut: Understanding How Large Language Models Compare Entities"
         url: "https://aclanthology.org/2026.eacl-long.222.pdf"
