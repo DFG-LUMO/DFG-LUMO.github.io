@@ -21,6 +21,11 @@ sections:
         authors: "T. Vitry, K. Edgeworth, S. Wermter, and J. H. Lee"
         venue: "German Conference on Artificial Intelligence (KI), to appear"
         year: 2026
+      - title: "Breaking the Gaol: What Predicts Jailbreak Success Across Large Language Models"
+        url: "https://konvens2026.uni-hamburg.de/index.php/dates-program/"
+        authors: "M. Niemeier, C. Holtermann, and J. H. Lee"
+        venue: "Conference on Natural Language Processing (KONVENS), to appear"
+        year: 2026
       - title: "Towards Ethical Multi-Agent Systems of Large Language Models: A Mechanistic Interpretability Perspective"
         url: "https://arxiv.org/pdf/2512.04691"
         authors: "J. H. Lee, A. Lauscher, and S. V. Albrecht"
