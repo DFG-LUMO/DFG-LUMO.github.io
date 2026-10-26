@@ -2,38 +2,58 @@ sections:
   - title: "Project-Specific Publications and Preprints"
     entries:
       - title: "The Expert Strikes Back: Interpreting Mixture-of-Experts Language Models at Expert Level"
-        url: "https://openreview.net/forum?id=ZCdnWNavOF"
+        url: "https://proceedings.mlr.press/v306/herbst26a.html"
         authors: "J. Herbst, S. Wermter, and J. H. Lee"
         venue: "International Conference on Machine Learning (ICML)"
         year: 2026
-      - title: "Explaining, Verifying, and Aligning Semantic Hierarchies in Vision-Language Model Embeddings"
-        url: "https://arxiv.org/abs/2603.26798"
+      - title: "Explaining, Verifying and Aligning Semantic Hierarchies in Vision-Language Model Embeddings"
+        url: "https://doi.org/10.24963/ijcai.2026/82"
         authors: "G. Schwalbe, M. Keser, M. Bayerkuhnlein, E. Heinert, A. Mütze, M. Keller, S. Tiwari, G. Mikriukov, D. Wolter, J. H. Lee, and M. Rottmann"
-        venue: "International Joint Conference on Artificial Intelligence (IJCAI), to appear"
+        venue: "International Joint Conference on Artificial Intelligence (IJCAI)"
+        year: 2026
+      - title: "Learning to Hear Hesitation: Continual Learning for Disfluency-Aware ASR"
+        url: "https://doi.org/10.21437/Interspeech.2026-2080"
+        authors: "H.-L. Kordt, T. Pekarek Rosin, J. H. Lee, S. Wermter"
+        venue: "Annual Conference of the International Speech Communication Association (Interspeech)"
         year: 2026
       - title: "Knowing the Facts but Choosing the Shortcut: Understanding How Large Language Models Compare Entities"
-        url: "https://aclanthology.org/2026.eacl-long.222.pdf"
+        url: "https://doi.org/10.18653/v1/2026.eacl-long.222"
         authors: "H. H. Lehmann, J. H. Lee, S. Schockaert, and S. Wermter"
         venue: "Conference of the European Chapter of the Association for Computational Linguistics (EACL)"
         year: 2026
+      - title: "Extraction and Analysis of Multimodal Concepts in Vision Language Models Through Sparse Autoencoders"
+        url: "https://doi.org/10.1007/978-3-032-38407-2_25"
+        authors: "S. Lanza, J. H. Lee, S. Wermter"
+        venue: "International Conference on Artificial Neural Networks (ICANN)"
+        year: 2026
       - title: "Bias Leaves a Gradient Trail: Label-Free Bias Identification via Gradient Probes on Concept Decompositions"
-        url: "https://arxiv.org/pdf/2605.28780"
-        authors: "T. Vitry, K. Edgeworth, S. Wermter, and J. H. Lee"
-        venue: "German Conference on Artificial Intelligence (KI), to appear"
+        url: "https://doi.org/10.1007/978-3-032-32335-4_12"
+        authors: "T. Vitry, K. von Valeburg, S. Wermter, and J. H. Lee"
+        venue: "German Conference on Artificial Intelligence (KI)"
+        year: 2026
+      - title: "Adaptive Recurrence as Algorithmic Time for Length Generalization in Addition"
+        url: "https://openreview.net/forum?id=XW18V4H9sq"
+        authors: "I. Ibrahimli, S. Wermter, J. H. Lee"
+        venue: "2nd Workshop on Compositional Learning at ICML 2026"
+        year: 2026
+      - title: "Towards Ethical Multi-Agent Systems of Large Language Models: A Mechanistic Interpretability Perspective"
+        url: "https://openreview.net/forum?id=ZuuIqdqer7"
+        authors: "J. H. Lee, A. Lauscher, and S. V. Albrecht"
+        venue: "Presented at LLM-based Multi-Agent Systems: Towards Responsible, Reliable, and Scalable Agentic Systems (LaMAS)"
         year: 2026
       - title: "Breaking the Gaol: What Predicts Jailbreak Success Across Large Language Models"
         url: "https://konvens2026.uni-hamburg.de/index.php/dates-program/"
         authors: "M. Niemeier, C. Holtermann, and J. H. Lee"
-        venue: "Conference on Natural Language Processing (KONVENS), to appear"
-        year: 2026
-      - title: "Towards Ethical Multi-Agent Systems of Large Language Models: A Mechanistic Interpretability Perspective"
-        url: "https://arxiv.org/pdf/2512.04691"
-        authors: "J. H. Lee, A. Lauscher, and S. V. Albrecht"
-        venue: "Presented at LLM-based Multi-Agent Systems: Towards Responsible, Reliable, and Scalable Agentic Systems (LaMAS)"
+        venue: "Conference on Natural Language Processing (KONVENS)"
         year: 2026
 
   - title: "Related Preparatory Work"
     entries:
+      - title: "Read Between the Layers: Leveraging Multi-Layer Representations for Rehearsal-Free Continual Learning with Pre-Trained Models"
+        url: "https://openreview.net/forum?id=ZTcxp9xYr2"
+        authors: "K. Ahrens, H. H. Lehmann, J. H. Lee, and S. Wermter"
+        venue: "Transactions on Machine Learning Research (TMLR)"
+        year: 2024
       - title: "Concept-Based Explanations in Computer Vision: Where Are We and Where Could We Go?"
         url: "https://doi.org/10.1007/978-3-031-92648-8_17"
         authors: "J. H. Lee, G. Mikriukov, G. Schwalbe, S. Wermter, and D. Wolter"
@@ -44,25 +64,20 @@ sections:
         authors: "J. H. Lee, S. Lanza, and S. Wermter"
         venue: "Neurosymbolic Artificial Intelligence (NAI)"
         year: 2024
-      - title: "Read Between the Layers: Leveraging Multi-Layer Representations for Rehearsal-Free Continual Learning with Pre-Trained Models"
-        url: "https://openreview.net/forum?id=ZTcxp9xYr2"
-        authors: "K. Ahrens, H. H. Lehmann, J. H. Lee, and S. Wermter"
-        venue: "Transactions on Machine Learning Research (TMLR)"
-        year: 2024
       - title: "Visually Grounded Continual Language Learning with Selective Specialization"
-        url: "https://aclanthology.org/2023.findings-emnlp.469"
+        url: "https://doi.org/10.18653/v1/2023.findings-emnlp.469"
         authors: "K. Ahrens, L. Bengtson, J. H. Lee, and S. Wermter"
         venue: "Findings of the Association for Computational Linguistics: Empirical Methods in Natural Language Processing (EMNLP Findings)"
-        year: 2023        
-      - title: "Neuro-Symbolic Spatio-Temporal Reasoning"
-        url: "https://ebooks.iospress.nl/doi/10.3233/FAIA230151"
-        authors: "J. H. Lee, M. Sioutis, K. Ahrens, M. Alirezaie, M. Kerzel, and S. Wermter"
-        venue: "Compendium of Neurosymbolic Artificial Intelligence"
         year: 2023
       - title: "Learning Bidirectional Action-Language Translation with Limited Supervision and Testing with Incongruent Input"
         url: "https://doi.org/10.1080/08839514.2023.2179167"
         authors: "O. Ozdemir, M. Kerzel, C. Weber, J. H. Lee, M. B. Hafez, P. Bruns, and S. Wermter"
         venue: "Applied Artificial Intelligence"
+        year: 2023
+      - title: "Neuro-Symbolic Spatio-Temporal Reasoning"
+        url: "https://ebooks.iospress.nl/doi/10.3233/FAIA230151"
+        authors: "J. H. Lee, M. Sioutis, K. Ahrens, M. Alirezaie, M. Kerzel, and S. Wermter"
+        venue: "Compendium of Neurosymbolic Artificial Intelligence"
         year: 2023
       - title: "What Is Right for Me Is Not yet Right for You: A Dataset for Grounding Relative Directions Via Multi-Task Learning"
         url: "https://doi.org/10.24963/ijcai.2022/145"
@@ -70,17 +85,17 @@ sections:
         venue: "International Joint Conference on Artificial Intelligence (IJCAI)"
         year: 2022
       - title: "Language Model-Based Paired Variational Autoencoders for Robotic Language Learning"
-        url: "https://doi.org/10.1109/TCDS.2022.3204452"
+        url: "https://doi.org/10.1109/tcds.2022.3204452"
         authors: "O. Ozdemir, M. Kerzel, C. Weber, J. H. Lee, and S. Wermter"
         venue: "IEEE Transactions on Cognitive and Developmental Systems (TCDS)"
         year: 2022
       - title: "Robotic Occlusion Reasoning for Efficient Object Existence Prediction"
-        url: "https://ieeexplore.ieee.org/document/9635947/"
+        url: "https://doi.org/10.1109/iros51168.2021.9635947"
         authors: "M. Li, C. Weber, M. Kerzel, J. H. Lee, Z. Zeng, Z. Liu, and S. Wermter"
         venue: "International Conference on Intelligent Robots and Systems (IROS)"
         year: 2021
       - title: "Generalization in Multimodal Language Learning from Simulation"
-        url: "https://ieeexplore.ieee.org/document/9534275/"
+        url: "https://doi.org/10.1109/ijcnn52387.2021.9534275"
         authors: "A. Eisermann, J. H. Lee, C. Weber, and S. Wermter"
         venue: "International Joint Conference on Neural Networks (IJCNN)"
         year: 2021
